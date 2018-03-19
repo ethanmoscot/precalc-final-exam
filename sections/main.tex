@@ -1,0 +1,60 @@
+\documentclass[addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tabu}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\graphicspath{{images\ }}
+\usepackage{skak}
+\usepackage[english]{babel}
+\usepackage{subfiles}
+% Formatting
+\pagestyle{headandfoot}
+\firstpageheadrule
+\firstpagefootrule
+\runningheadrule
+\firstpageheader{Name:}{\Large{\textbf{2017 Final Exam}}}{Block: \ \ \ }
+\runningheader{Name:}{\large{\textbf{2017 Final Exam}}}{Block: \ \ \ }
+\runningfootrule
+\firstpagefooter{PreCalc Fun}{ Page \thepage\ of \numpages}{Ethan Moscot}
+\runningfooter{PreCalc Fun}{ Page \thepage\ of \numpages}{Ethan Moscot}
+
+\begin{document}
+% Directions & Grading Info
+\begin{center}
+\fbox{\fbox{\parbox{7in}{\centering
+The content on this final exam is mostly placed in chronological order within each section, from Unit 1-Unit 8.
+\newline Answer all non-multiple choice questions to the best of your ability in order to receive the greatest amount of credit.}}}
+\end{center}
+\begin{center}
+This final exam has \numquestions\ questions (100 exam questions and 2 bonus questions), worth a total of \numpoints\ points and \numbonuspoints\ bonus points.
+Good luck!
+\end{center}
+
+% Multiple Choice section
+\subfile{sections/multiplechoice.tex}
+\newpage
+
+% Short Answer section
+\subfile{sections/shortanswer.tex}
+\newpage
+
+% Word Problems section
+\subfile{sections/wordproblems.tex}
+\newpage
+
+% Graphing section
+\subfile{sections/graphing.tex}
+\newpage
+    
+% Extra Credit section
+\subfile{sections/extracredit.tex}
+\newpage
+
+% Formulas and Equations
+\subfile{sections/formulas.tex}
+\end{document}
